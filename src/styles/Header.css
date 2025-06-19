@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 255, 0.353);
+    height: 5vh;
+
+}
+.logo{
+    display: inline-block;
+}
+.navigation{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,57 @@
+.projectCard{
+    height: 250px;
+    width: 50%;
+    border: solid rgb(150, 150, 150) 1px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.projectCard:hover{
+    border: solid black 1.5px;
+}
+.projectImage{
+    height: 225px;
+    width: 225px;
+    border-radius: 10px;
+}
+.projectImage:hover{
+    scale: 1.005;
+}
+
+.projectSide{
+    border: solid rgb(150, 150, 150) 1px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projectSide:hover{
+    border: solid black 1.5px;
+    scale: 1.025;
+}
+.projectLinks{
+    display: flex;
+    gap: 1em;
+}
+.roundLink{
+    border: solid rgb(150, 150, 150) 1px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.roundLink:hover{
+    border: solid rgb(0, 0, 0) 1.5px;
+    scale: 1.05;
+}
+.externalLinkImage{
+    width: 20px;
+    height: auto;
+}
+.liveLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
