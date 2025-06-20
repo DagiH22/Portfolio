@@ -17,7 +17,7 @@ function ProjectCard() {
 
             <div className='projectLinks'>
                 <a href="#" className='liveLink roundLink'><img src="../src/assets/images/external-link.svg" alt="external Link" className='externalLinkImage'/>View Live</a>
-                <a href="#" className='sourceCode roundLink'>&lt;/&gt; Source Code</a>
+                <a href="#" className='sourceCode roundLink'><b>&lt;/&gt;</b> Source Code</a>
             </div>
         </div>
     </div>
