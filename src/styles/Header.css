@@ -6,9 +6,11 @@ header{
     z-index: 10;
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.522);
+    background-color: rgba(255, 255, 255, 0);
     height: 5vh;
     padding: 5vh;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 .logo{
     display: inline-block;
@@ -36,7 +38,7 @@ header{
     left: 0;
     bottom: -2px;
     background-color: black; /* your accent color */
-    transition: width 700ms ease;
+    transition: width 500ms ease;
     border-radius: 10px;
 }
 .link:hover::after {

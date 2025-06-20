@@ -4,7 +4,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
 }
 .desc h2{
     margin-bottom: 5px;
@@ -16,15 +16,23 @@
 .briefAbt{
     font-size: 1rem;
 }
+.skills{
+    margin-bottom: 5rem;
+}
 .skills h3{
     margin-bottom: 5px;
-    font-size: 1.6rem;
-}
-.skills h4{
-    margin: 10px 0;
     font-size: 1.4rem;
 }
-.backEnd, .frontEnd {
+.skills h4{
+    margin: 10px 0 20px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.dev{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.backEnd, .frontEnd, .tools {
     display: flex;
     flex-wrap: wrap;
     /* gap: 10px;  */
@@ -36,15 +44,16 @@
     margin-right: 5px;
 }
 .logos{
-    border: solid black 1px;
+    border: solid black 1.5px;
     margin: 10px;
     display: flex;
     align-items: center;
     width: fit-content;
     padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
     cursor: default;
+    transition: all 500ms ease;
 }
 .logos:hover{
     translate: 0 -2px;

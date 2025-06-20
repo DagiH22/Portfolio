@@ -1,12 +1,16 @@
 import React from 'react'
 import '../styles/About.css'
-import html5Logo from '../assets/images/html5.svg'
-import css3Logo from '../assets/images/css3.svg'
-import jsLogo from '../assets/images/javascript.svg'
-import reactLogo from '../assets/images/react.svg'
-import mongodbLogo from '../assets/images/mongodb.svg'
-import nodeLogo from '../assets/images/node.svg'
-import expressLogo from '../assets/images/express.svg'
+import html5Logo from '../assets/images/skills/html5.svg'
+import css3Logo from '../assets/images/skills/css3.svg'
+import jsLogo from '../assets/images/skills/javascript.svg'
+import reactLogo from '../assets/images/skills/react.svg'
+import mongodbLogo from '../assets/images/skills/mongodb.svg'
+import nodeLogo from '../assets/images/skills/node.svg'
+import expressLogo from '../assets/images/skills/express.svg'
+import gitLogo from '../assets/images/skills/git.svg'
+import gitHubLogo from '../assets/images/skills/github.svg'
+import vscodeLogo from '../assets/images/skills/vscode.svg'
+
 
 function About() {
   return (
@@ -39,18 +43,24 @@ function About() {
             <hr />
             <h4>Web Development</h4>
             <div className='webSkills'>
-              Front End
+              <span className='dev'>Front End</span>
               <div className='frontEnd'>
                 <span className='logos'><img src={reactLogo} alt="react logo"/><span>React</span> </span>
                 <span className='logos'><img src={jsLogo} alt="javaScript logo"/><span>JavaScript</span></span>
                 <span className='logos'><img src={css3Logo} alt="CSS 3 logo"/><span>CSS</span></span>
                 <span className='logos'><img src={html5Logo} alt="HTML 5 logo"/><span>HTML 5</span></span>
               </div>
-              Back End
+              <span className='dev'>Back End</span>
               <div className="backEnd">
                 <span className='logos'><img src={nodeLogo} alt="node js logo"/><span>Node Js</span> </span>
                 <span className='logos'><img src={expressLogo} alt="express js logo"/><span>Express Js</span></span>
                 <span className='logos'><img src={mongodbLogo} alt="mongodb logo"/><span>MongoDB</span></span>  
+              </div>
+              <span className='dev'>Tools & Workflow</span>
+              <div className="tools">
+                <span className="logos"><img src={gitLogo} alt="Git logo"/><span>Git</span></span>
+                <span className="logos"><img src={gitHubLogo} alt="GitHub logo"/><span>GitHub</span></span>
+                <span className="logos"><img src={vscodeLogo} alt="VS Code logo"/><span>VS Code</span></span>
               </div>
             </div>
             {/* <div className='networking'>
