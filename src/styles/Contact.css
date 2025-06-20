@@ -1,0 +1,14 @@
+#contact{
+    width: 50%;
+}
+ul{
+    margin-left: 50px;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    transition: all 5000ms ease-in ;
+}
+#contact a:hover{
+    text-decoration: underline;
+}
