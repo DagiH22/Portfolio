@@ -9,6 +9,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 5px black ;
     transition: all 500ms ease;
+    font-size: 1.2em;
 }
 .projectCard:hover{
     border: solid black 1.5px;
@@ -50,6 +51,7 @@
     padding: 5px 10px;
     border-radius: 50px;
     transition: all 300ms ease;
+    font-size: 1.1em;
 }
 .roundLink:hover{
     border: solid rgb(0, 0, 0) 1.5px;

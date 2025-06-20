@@ -1,5 +1,6 @@
 #contact{
     width: 50%;
+    font-size: 1.2em;
 }
 ul{
     margin-left: 50px;
@@ -7,8 +8,17 @@ ul{
 a{
     position: relative;
     text-decoration: none;
-    transition: all 5000ms ease-in ;
+    /* transition: text-decoration 5000ms ease-in ; */
 }
 #contact a:hover{
     text-decoration: underline;
+}
+#contact img{
+    width: 15px;
+    height: auto;
+}
+#contact li {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }

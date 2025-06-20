@@ -5,8 +5,12 @@ function Home() {
   return (
     <div id='home'>
         <div className='homeContainer'>
-            <p className='greeting'>Hey, Dagmawi here. Web developer. Network Engineer</p>
-            <p className='shortDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum praesentium incidunt alias voluptate inventore voluptatem. Fuga, natus ad! Amet, consectetur dolor sunt voluptas iure numquam alias magni hic totam.</p>
+            <p className='greeting'><span className='hey'>Hey, I'm</span> <br/><span className='dagi'>Dagmawi</span><br/><span className='web'>Web Developer {/*| Network Engineer*/}</span></p>
+            <p className='shortDescription'>I make clean, modern web experiences using React and a growing toolkit of web technologies.
+                                            While my main strength is in the frontend, 
+                                            I'm actively expanding into backend development to build more complete and dynamic applications.
+                                            <br/>
+                                            <span className='always'>Always learning. Always building.</span></p>
         </div>
         <button className='downlaodCv'>Download CV</button>
     </div>

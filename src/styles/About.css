@@ -1,3 +1,56 @@
 .aboutContainer{
     width: 50%;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.desc h2{
+    margin-bottom: 5px;
+}
+.aboutContainer hr{
+    height: 5px;
+    border-radius: 5px;
+}
+.briefAbt{
+    font-size: 1rem;
+}
+.skills h3{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+.skills h4{
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+.backEnd, .frontEnd {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px;  */
+    margin: 5px 0px 10px 0px;
+}
+.logos img{
+    height: 1.5rem;
+    width: auto;
+    margin-right: 5px;
+}
+.logos{
+    border: solid black 1px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+    cursor: default;
+}
+.logos:hover{
+    translate: 0 -2px;
+    scale: 1.025;
+    box-shadow: 0 0 6px black;
+}
+.logos span{
+    display: inline-block;
 }

@@ -1,17 +1,47 @@
 #home{
     width: 50%;
     display: flex;
+    font-size: 1.2em;
     flex-direction: column;
+    min-height:90vh;
+    gap: 2em;
+    padding-top: 2em;
+    /* justify-content: space-around; */
 }
 /* .homeContainer{
     margin-bottom: 20px;
 } */
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
 .greeting {
-    font-size: 2em;
     opacity: 0;
     transform: translateX(-100px);
     animation: slideInLeft 2s ease-out forwards;
-    margin-bottom: 10px;
+    font-family:orbitron,sans-serif ;
+    /* margin-bottom: 10px; */
+    /* font-size: 1.5em; */
+  }
+  .dagi{
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  .web{
+    font-size: 1.75em;
+    display: inline-block;
+    margin: .2em 0 .5em 0;
+    font-weight: 500;
+  }
+  .always{
+    font-weight: bolder;
+    display: inline-block;
+    margin-top: 1em;
+  }
+  .hey{
+    font-weight: bold;
   }
   
   @keyframes slideInLeft {
@@ -20,19 +50,26 @@
       transform: translateX(0);
     }
   }
+  .shortDescription{
+    font-size: 1.1em;
+  }
 .downlaodCv{
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 50px;
     background-color: white;
     border: 1px solid black;
     outline: none;
-    transition: all 400ms ease;
+    transition: all 700ms ease;
     width: fit-content;
     height: auto;
+    cursor: pointer;
+    font-weight: bold;
+    /* font-size: 1.2em; */
 }
 .downlaodCv:hover{
     scale: 1.1;
     background-color: black;
     color:white;
 }
+
   
