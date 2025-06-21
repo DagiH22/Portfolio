@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/ProjectCard.css'
-// Portfolio\src\assets\images\dh3.svg
 
 function ProjectCard({data}) {
     const alt = `project ${data.id} image`

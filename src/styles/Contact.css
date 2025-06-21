@@ -6,7 +6,6 @@
 a{
     position: relative;
     text-decoration: none;
-    /* transition: text-decoration 5000ms ease-in ; */
 }
 #contact a:hover{
     text-decoration: underline;
@@ -17,16 +16,12 @@ a{
 }
 #contact ul {
     display: flex;
-    /* flex-direction: column; */
     gap: 5%;
-    /* justify-content: space-evenly; */
     width: 100%;
-    margin:2rem 0 2rem 0 ;
-    
+    margin:2rem 0 2rem 0 ; 
 }
 #contact li {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     font-size: 1.2rem;
     border: solid 1px black;
@@ -62,23 +57,27 @@ a{
         width: 80%;
     }
     #contact ul {
-        display: flex;
-        /* flex-direction: column; */
-        gap: 5%;
-        /* justify-content: space-evenly; */
+        flex-direction: column;
+        gap: 1em;
         width: 100%;
         margin:1rem 0 1rem 0 ;     
     }
     #contact li {
         font-size: 1rem;
+        width: fit-content;
         padding: 7px 15px;
-        border-radius: 5px;
-        box-shadow: 0 0 2px black; 
-        transition: all 500ms; 
+    }
+    #contact h2{
+        font-size: 1.4rem;
+    }
+    #contact p {
+        font-size: 0.8rem;
+    }
+    #contact li {
+        font-size: 0.8rem;
+    }
+    #contact img{
+        width: 12px;
+
     }
 }
-/* @media (max-width: 400px) {
-    #contact{
-        width: 90%;
-    }
-} */

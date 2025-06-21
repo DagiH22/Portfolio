@@ -14,7 +14,6 @@
 .projectCard:hover{
     border: solid black 1.5px;
     box-shadow: 0px 0px 10px black;
-    /* scale: 1.01; */
     translate: 0 -2px;
 }
 .projectImage{
@@ -41,7 +40,6 @@
 }
 .projectSide:hover{
     border: solid black 2px;
-    /* scale: 1.025; */
 }
 .projectLinks{
     display: flex;
@@ -88,9 +86,6 @@
       padding: 1rem;
     }
   
-    /* .projectImage{
-        height: 40%;
-    } */
     .projectSide {
       width: 100%;
       display: flex;
@@ -104,26 +99,39 @@
       border: solid red 2px;
       align-self: flex-start;
     }
-  
     .projectTitle {
       text-align: center;
     }
   }
   
-  /* ✅ Mobile view (small screens) */
+
   @media (max-width: 600px) {
     .projectCard {
-      font-size: 1rem;
+      font-size: 0.8rem;
       gap: 1rem;
     }
-  
+    .projectTitle{
+        font-size: 1rem;
+    }
+    .externalLinkImage{
+        width: 15px;
+    }
     .roundLink {
-      font-size: .9rem;
+      font-size: .8rem;
       padding: 5px 8px;
     }
     .projectLinks{
         display: flex;
-        gap: 1em;
+        flex-wrap: wrap;
+        gap: .7rem;
     }
+    .liveLink{
+        margin-left: .2rem;
+    }
+    .sCode{
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+
   }
 

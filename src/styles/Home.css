@@ -6,11 +6,7 @@
     min-height:90vh;
     gap: 2em;
     padding-top: 2em;
-    /* justify-content: space-around; */
 }
-/* .homeContainer{
-    margin-bottom: 20px;
-} */
 .homeContainer{
   display: flex;
   flex-direction: column;
@@ -22,8 +18,7 @@
     transform: translateX(-100px);
     animation: slideInLeft 2s ease-out forwards;
     font-family:orbitron,sans-serif ;
-    /* margin-bottom: 10px; */
-    /* font-size: 1.5em; */
+
   }
   .dagi{
     font-size: 3em;
@@ -79,11 +74,21 @@
 @media (max-width: 600px) {
   #home{
     width: 80%;
+    font-size: 1em;
+  }
+  .dagi{
+    font-size: 2em;
+  }
+  .downlaodCv{
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+  .shortDescription{
+    font-size: 0.9em;
+  }
+  .web{
+    font-size: 1.3em;
   }
 }
-/* @media (max-width: 400px) {
-  #home{
-    width: 90%;
-  }
-} */
+
   

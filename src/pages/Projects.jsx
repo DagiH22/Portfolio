@@ -8,9 +8,6 @@ function Projects() {
   return (
     <div id='projects'>
         <h2>Projects</h2> <hr />
-        {/* {projects.forEach(project=>{
-            console.log(project)
-        })} */}
         { projects.map(project => {
                return <ProjectCard key={project.id} data= {project} />
             })}

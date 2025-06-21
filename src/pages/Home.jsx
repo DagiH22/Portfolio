@@ -12,7 +12,7 @@ function Home() {
                                             <br/>
                                             <span className='always'>Always learning. Always building.</span></p>
         </div>
-        <button className='downlaodCv'>Download CV</button>
+        <a href="../../assets/cv/Dagmawi-Heywot-Resume.pdf" download='Dagmawi-Heywot-Resume.pdf' ><button className='downlaodCv'>Download CV</button></a>
     </div>
   )
 }

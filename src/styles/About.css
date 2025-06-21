@@ -71,10 +71,23 @@
 @media (max-width: 600px) {
     .aboutContainer{
         width: 80%;
+        font-size: 1rem;
+    }
+    .briefAbt{
+        font-size: 0.8rem;
+    }
+    .skills h3{
+        font-size: 1.1rem;
+    }
+    .skills h4{
+        font-size: 1rem;
+    }
+    .dev{
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .logos img{
+        height: 1.2rem;
     }
 }
-/* @media (max-width: 400px) {
-    .aboutContainer{
-        width: 90%;
-    }
-} */
+
