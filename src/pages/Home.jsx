@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Home.css'
+import resume from "../../assets/cv/Dagmawi-Heywot-Resume.pdf"
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
                                             <br/>
                                             <span className='always'>Always learning. Always building.</span></p>
         </div>
-        <a href="../../assets/cv/Dagmawi-Heywot-Resume.pdf" download='Dagmawi-Heywot-Resume.pdf' ><button className='downlaodCv'>Download CV</button></a>
+        <a href={resume} download='Dagmawi-Heywot-Resume.pdf' ><button className='downlaodCv'>Download CV</button></a>
     </div>
   )
 }
