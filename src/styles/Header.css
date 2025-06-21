@@ -19,7 +19,7 @@ header{
     flex: 1;
 }
 .logo img{
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 .navigation{
@@ -91,27 +91,30 @@ header{
   
     .menu-icon {
       display: flex;
+      margin-right: 1em;
     }
     .logo{
         flex: 1;
-        margin-left: 2em;
+        margin-top: 1em;
+        margin-left: 0;
     }
   
     .logo img {
       width: 100px;
+      margin-left:0;
     }
   }
 
 @media (max-width: 400px) {
     header {
-      padding: 0.7rem 1rem;
+      padding: 0.7rem 0;
       gap: 1rem;
     }
   
     .logo img {
       width: 80px;
     }
-  
+
     .navigation {
       font-size: 1rem;
       gap: 1rem;
