@@ -98,7 +98,6 @@
     .projectImg {
       height: auto;
       max-height: 250px;
-      border: solid red 2px;
       align-self: flex-start;
     }
     .projectTitle {
@@ -134,6 +133,5 @@
         font-weight: 400;
         font-size: 0.7rem;
     }
-
   }
 
