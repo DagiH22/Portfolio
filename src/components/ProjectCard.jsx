@@ -2,22 +2,27 @@ import React from 'react'
 import '../styles/ProjectCard.css'
 // Portfolio\src\assets\images\dh3.svg
 
-function ProjectCard() {
+function ProjectCard({data}) {
+    const alt = `project ${data.id} image`
+    const id = String(data.id)
+    
   return (
-    <div className='projectCard'>
+    <div className='projectCard' id={id}>
+        {console.log('reached')}
+        {console.log(data)}
         <div className='projectImg'>
-            <img src="../src/assets/images/dh3.svg" alt="project image" className='projectImage'/>  
+            <img src={data.image} alt={alt} className='projectImage'/>  
         </div>
 
         <div className='projectSide'>
             <div className='projectTexts'>
-                <p className='projectTitle'>lorem</p>
-                <p className='projectDescription'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloremque natus possimus aut perferendis minima debitis dicta quaerat, non quibusdam architecto placeat! Sed quisquam labore illum velit? Eum, voluptatum a.</p>
+                <p className='projectTitle'>{data.title}</p>
+                <p className='projectDescription'>{data.description}</p>
             </div>
 
             <div className='projectLinks'>
-                <a href="#" className='liveLink roundLink'><img src="../src/assets/images/external-link.svg" alt="external Link" className='externalLinkImage'/>  View Live</a>
-                <a href="#" className='sourceCode roundLink'><span className='sCode'>&lt;/&gt;</span> Source Code</a>
+                <a href={data.demoLink} className='liveLink roundLink'><img src="../src/assets/images/external-link.svg" alt="external Link" className='externalLinkImage'/>  View Live</a>
+                <a href={data.codeLink} className='sourceCode roundLink'><span className='sCode'>&lt;/&gt;</span> Source Code</a>
             </div>
         </div>
     </div>

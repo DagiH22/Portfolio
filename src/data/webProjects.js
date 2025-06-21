@@ -4,7 +4,7 @@ const projects = [
       "title": "PixelCraft",
       "description": "A simple drawing app built with HTML5 Canvas and JavaScript. Supports color picking, brush sizes, and save to PNG.",
       "techStack": ["HTML", "CSS", "JavaScript"],
-      "image": "pixelcraft.png",
+      "image": "../../assets/dh-l.jpg",
       "demoLink": "https://your-demo-link.com/pixelcraft",
       "codeLink": "https://github.com/yourusername/pixelcraft"
     },
@@ -13,7 +13,7 @@ const projects = [
       "title": "TaskWave",
       "description": "A minimal task management web app with light/dark mode toggle, task filtering, and local storage.",
       "techStack": ["React", "Tailwind CSS"],
-      "image": "taskwave.png",
+      "image": "../../assets/dh-l.jpg",
       "demoLink": "https://your-demo-link.com/taskwave",
       "codeLink": "https://github.com/yourusername/taskwave"
     },
@@ -22,7 +22,7 @@ const projects = [
       "title": "DevBlog",
       "description": "A markdown-based blog platform with a Node.js + Express backend and MongoDB database.",
       "techStack": ["Node.js", "Express", "MongoDB", "EJS"],
-      "image": "devblog.png",
+      "image": "../../assets/dh-l.jpg",
       "demoLink": "https://your-demo-link.com/devblog",
       "codeLink": "https://github.com/yourusername/devblog"
     },
@@ -31,7 +31,7 @@ const projects = [
       "title": "Portify",
       "description": "This very portfolio — a sleek and minimal site built with React and CSS modules to showcase my work and interests.",
       "techStack": ["React", "CSS Modules"],
-      "image": "portify.png",
+      "image": "../../assets/dh-l.jpg",
       "demoLink": "https://your-portfolio.com",
       "codeLink": "https://github.com/yourusername/portfolio"
     }

@@ -1,0 +1,11 @@
+#projects{
+    width: 50%;  
+}
+#projects h2{
+    margin-bottom: 5px;
+}
+#projects hr{
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
