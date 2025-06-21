@@ -21,7 +21,6 @@ header{
 .logo img{
     width: 150px;
     height: auto;
-    border-radius: 20px;
 }
 .navigation{
     display: flex;

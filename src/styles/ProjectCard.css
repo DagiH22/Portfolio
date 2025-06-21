@@ -55,6 +55,8 @@
     border-radius: 50px;
     transition: all 300ms ease;
     font-size: 1.1rem;
+    width: fit-content;
+    height: auto;
 }
 .roundLink:hover{
     border: solid rgb(0, 0, 0) 1.5px;

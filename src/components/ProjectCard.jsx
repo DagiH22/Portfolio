@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/ProjectCard.css'
+import externalLinkImg from "../assets/images/external-link.svg"
 
 function ProjectCard({data}) {
     const alt = `project ${data.id} image`
@@ -18,7 +19,7 @@ function ProjectCard({data}) {
             </div>
 
             <div className='projectLinks'>
-                <a href={data.demoLink} className='liveLink roundLink'><img src="../assets/images/external-link.svg" alt="external Link" className='externalLinkImage'/>  View Live</a>
+                <a href={data.demoLink} className='liveLink roundLink'><img src={externalLinkImg} alt="external Link" className='externalLinkImage'/>  View Live</a>
                 <a href={data.codeLink} className='sourceCode roundLink'><span className='sCode'>&lt;/&gt;</span> Source Code</a>
             </div>
         </div>
