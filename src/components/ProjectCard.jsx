@@ -8,8 +8,6 @@ function ProjectCard({data}) {
     
   return (
     <div className='projectCard' id={id}>
-        {console.log('reached')}
-        {console.log(data)}
         <div className='projectImg'>
             <img src={data.image} alt={alt} className='projectImage'/>  
         </div>

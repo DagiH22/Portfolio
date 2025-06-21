@@ -1,5 +1,5 @@
 .projectCard{
-    height: 250px;
+    height: 17rem;
     width: 100%;
     border: solid rgb(150, 150, 150) 1px;
     display: flex;
@@ -18,13 +18,16 @@
     translate: 0 -2px;
 }
 .projectImage{
-    height: 225px;
-    width: 225px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     transition: all 500ms ease;
 }
+.projectImg{
+    height: 100%;
+}
 .projectImage:hover{
-    scale: 1.025;
+    scale: 1.02;
 }
 
 .projectSide{
@@ -42,10 +45,11 @@
 }
 .projectLinks{
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 .projectTitle{
     font-size: 1.3rem;
+    margin:.5rem 0 ;
 }
 .roundLink{
     border: solid rgb(150, 150, 150) 1px;
@@ -66,8 +70,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: .5rem;
 }
 .sCode{
     font-weight: 400;
 }
+@media (max-width:1250px){
+    .projectCard{
+        height: 14rem;
+    }
+}
+@media (max-width: 1024px) {
+    .projectCard {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    /* .projectImage{
+        height: 40%;
+    } */
+    .projectSide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .projectImg {
+      height: auto;
+      max-height: 250px;
+      border: solid red 2px;
+      align-self: flex-start;
+    }
+  
+    .projectTitle {
+      text-align: center;
+    }
+  }
+  
+  /* ✅ Mobile view (small screens) */
+  @media (max-width: 600px) {
+    .projectCard {
+      font-size: 1rem;
+      gap: 1rem;
+    }
+  
+    .roundLink {
+      font-size: .9rem;
+      padding: 5px 8px;
+    }
+    .projectLinks{
+        display: flex;
+        gap: 1em;
+    }
+  }
 

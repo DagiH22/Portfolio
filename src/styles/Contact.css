@@ -52,3 +52,33 @@ a{
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
+@media (max-width: 1024px) {
+    #contact{
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    #contact{
+        width: 80%;
+    }
+    #contact ul {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 5%;
+        /* justify-content: space-evenly; */
+        width: 100%;
+        margin:1rem 0 1rem 0 ;     
+    }
+    #contact li {
+        font-size: 1rem;
+        padding: 7px 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 2px black; 
+        transition: all 500ms; 
+    }
+}
+/* @media (max-width: 400px) {
+    #contact{
+        width: 90%;
+    }
+} */

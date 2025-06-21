@@ -71,5 +71,19 @@
     background-color: black;
     color:white;
 }
-
+@media (max-width: 1024px) {
+  #home{
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  #home{
+    width: 80%;
+  }
+}
+/* @media (max-width: 400px) {
+  #home{
+    width: 90%;
+  }
+} */
   

@@ -63,3 +63,18 @@
 .logos span{
     display: inline-block;
 }
+@media (max-width: 1024px) {
+    .aboutContainer{
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    .aboutContainer{
+        width: 80%;
+    }
+}
+/* @media (max-width: 400px) {
+    .aboutContainer{
+        width: 90%;
+    }
+} */

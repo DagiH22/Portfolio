@@ -11,10 +11,14 @@ header{
     padding: 5vh;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+    max-width: 100vw;
+    width: 100vw;
+    
 }
 .logo{
     display: inline-block;
-    margin-left: 4em;
+    flex: 1;
+    /* margin-left: 4em; */
 }
 .logo img{
     width: 150px;
@@ -26,6 +30,7 @@ header{
     gap: 2em;
     font-weight: bolder;
     font-size: 1.2rem;
+    max-width: 25%;
 }
 .link{
     position: relative;
@@ -43,4 +48,75 @@ header{
 }
 .link:hover::after {
     width: 100%;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+@media (max-width: 1050px) {
+    
+    .logo{
+        margin-left: 0;
+    }
+    header{
+        padding-left: 3vh;
+    }
+  }
+
+@media (max-width: 768px) {
+    .navigation {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    .navigation.show {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+    .logo{
+        flex: 1;
+        margin-left: 2em;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  }
+
+@media (max-width: 400px) {
+    header {
+      padding: 0.7rem 1rem;
+      gap: 1rem;
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  
+    .navigation {
+      font-size: 1rem;
+      gap: 1rem;
+    }
 }
