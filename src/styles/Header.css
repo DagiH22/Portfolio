@@ -17,6 +17,7 @@ header{
 .logo{
     display: inline;
     flex: 1;
+    margin-left:7rem ;
 }
 .logo img{
     width: 120px;
@@ -65,7 +66,7 @@ header{
 @media (max-width: 1050px) {
     
     .logo{
-        margin-left: 0;
+        margin-left: 4rem;
     }
     header{
         padding-left: 3vh;
