@@ -18,7 +18,7 @@ const projects = [
       "techStack": ["React", "CSS"],
       "image": portfolio,
       "demoLink": "https://dagi-portfolio.netlify.app/",
-      "codeLink": "https://github.com/yourusername/portfolio"
+      "codeLink": "https://github.com/DagiH22/Portfolio"
     }
   ]
   
