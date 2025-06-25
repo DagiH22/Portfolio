@@ -24,6 +24,7 @@
 }
 .projectImg{
     height: 100%;
+    width: 90%;
 }
 .projectImage:hover{
     scale: 1.02;

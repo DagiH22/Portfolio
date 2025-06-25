@@ -27,7 +27,7 @@ This is my personal portfolio website built with **React**, to showcase my skill
 ```bash
 git clone https://github.com/YourUsername/your-portfolio.git
 npm install
-npm start
+npm run dev
 ```
 ## 🌐 Deployment
 The site is deployed on Netlify.
