@@ -19,8 +19,8 @@ function ProjectCard({data}) {
             </div>
 
             <div className='projectLinks'>
-                <a href={data.demoLink} className='liveLink roundLink'><img src={externalLinkImg} alt="external Link" className='externalLinkImage'/>  View Live</a>
-                <a href={data.codeLink} className='sourceCode roundLink'><span className='sCode'>&lt;/&gt;</span> Source Code</a>
+                <a href={data.demoLink} className='liveLink roundLink' target='_blank'><img src={externalLinkImg} alt="external Link" className='externalLinkImage' />  View Live</a>
+                <a href={data.codeLink} className='sourceCode roundLink' target='_blank'><span className='sCode'>&lt;/&gt;</span> Source Code</a>
             </div>
         </div>
     </div>

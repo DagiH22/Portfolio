@@ -5,7 +5,7 @@ import ipMapper from "../assets/images/screenshots/ipMapper.png"
 const projects = [
     {
       "id": 1,
-      "title": "IpMapper",
+      "title": "IPMapper",
       "description": "IPMapper is a React app that shows the location of any IP or domain on a map. It auto-detects yours on load, works on all devices, and uses IPify, Leaflet, and CartoDB tiles.",
       "techStack": [
         "React","JavaScript (ES6+)","HTML5","CSS3","LeafletJS","CartoDB Tiles","IPify Geolocation API"],
