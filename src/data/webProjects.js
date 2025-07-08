@@ -6,7 +6,7 @@ const projects = [
     {
       "id": 1,
       "title": "IPMapper",
-      "description": "IPMapper is a React app that shows the location of any IP or domain on a map. It auto-detects yours on load, works on all devices, and uses IPify, Leaflet, and CartoDB tiles.",
+      "description": "IPMapper is a React app that shows the location of any IP or domain on a map. It auto-detects yours on load, works on all devices, and uses IPify for geolocation, Google DNS for domain resolution, Leaflet, and CartoDB tiles.",
       "techStack": [
         "React","JavaScript (ES6+)","HTML5","CSS3","LeafletJS","CartoDB Tiles","IPify Geolocation API"],
       "image": ipMapper,
