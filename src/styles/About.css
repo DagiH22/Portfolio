@@ -32,7 +32,7 @@
     font-weight: 500;
     font-size: 1.1rem;
 }
-.backEnd, .frontEnd, .tools {
+.backEnd, .frontEnd, .tools, .Languages {
     display: flex;
     flex-wrap: wrap;
     /* gap: 10px;  */

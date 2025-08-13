@@ -10,6 +10,9 @@ import expressLogo from '../assets/images/skills/express.svg'
 import gitLogo from '../assets/images/skills/git.svg'
 import gitHubLogo from '../assets/images/skills/github.svg'
 import vscodeLogo from '../assets/images/skills/vscode.svg'
+import TailWindLogo from '../assets/images/skills/tailwind.svg'
+import nextLogo from '../assets/images/skills/nextjs.svg'
+import tsLogo from '../assets/images/skills/typescript.svg'
 
 
 function About() {
@@ -46,7 +49,8 @@ function About() {
               <span className='dev'>Front End</span>
               <div className='frontEnd'>
                 <span className='logos'><img src={reactLogo} alt="react logo"/><span>React</span> </span>
-                <span className='logos'><img src={jsLogo} alt="javaScript logo"/><span>JavaScript</span></span>
+                <span className='logos'><img src={nextLogo} alt="NextJs logo"/><span>NextJs</span></span>
+                <span className='logos'><img src={TailWindLogo} alt="Tailwind logo"/><span>TailWind CSS</span></span>
                 <span className='logos'><img src={css3Logo} alt="CSS 3 logo"/><span>CSS</span></span>
                 <span className='logos'><img src={html5Logo} alt="HTML 5 logo"/><span>HTML 5</span></span>
               </div>
@@ -55,6 +59,11 @@ function About() {
                 <span className='logos'><img src={nodeLogo} alt="node js logo"/><span>Node Js</span> </span>
                 <span className='logos'><img src={expressLogo} alt="express js logo"/><span>Express Js</span></span>
                 <span className='logos'><img src={mongodbLogo} alt="mongodb logo"/><span>MongoDB</span></span>  
+              </div>
+              <span className='dev'>Languages</span>
+              <div className="Languages">
+                <span className="logos"><img src={jsLogo} alt="JavaScript logo"/><span>JavaScript</span></span>
+                <span className="logos"><img src={tsLogo} alt="TypeScript logo"/><span>TypeScript</span></span>
               </div>
               <span className='dev'>Tools & Workflow</span>
               <div className="tools">
