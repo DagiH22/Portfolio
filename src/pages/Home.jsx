@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 import '../styles/Home.css'
-import resume from "../../assets/cv/Dagmawi-Heywot-CV.pdf"
+import resume from "../../assets/cv/Dagmawi-Heywot-Resume.pdf"
 
 function Home() {
   const text = "Always learning. Always building.";
