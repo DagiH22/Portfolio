@@ -1,93 +1,152 @@
-.aboutContainer{
-    width: 50%;
-    font-size: 1.2rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+.aboutContainer {
+  width: 50%;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
-.desc h2{
-    margin-bottom: 5px;
+.desc h2 {
+  margin-bottom: 5px;
 }
-.aboutContainer hr{
-    height: 5px;
-    border-radius: 5px;
+.aboutContainer hr {
+  height: 5px;
+  border-radius: 5px;
 }
-.briefAbt{
-    font-size: 1rem;
+.briefAbt {
+  font-size: 1rem;
 }
-.skills{
-    margin-bottom: 5rem;
+.skills {
+  margin-bottom: 5rem;
 }
-.skills h3{
-    margin-bottom: 5px;
-    font-size: 1.4rem;
+.skills h3 {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
 }
-.skills h4{
-    margin: 10px 0 20px 0;
-    font-size: 1.3rem;
-    font-weight: 500;
+.skills h4 {
+  margin: 10px 0 20px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-.dev{
-    font-weight: 500;
-    font-size: 1.1rem;
+.dev {
+  font-weight: 500;
+  font-size: 1.1rem;
 }
-.backEnd, .frontEnd, .tools, .Languages {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 10px;  */
-    margin: 5px 0px 10px 0px;
+.backEnd,
+.frontEnd,
+.tools,
+.Languages {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px;  */
+  margin: 5px 0px 10px 0px;
 }
-.logos img{
-    height: 1.5rem;
-    width: auto;
-    margin-right: 5px;
+.logos img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 5px;
 }
-.logos{
-    border: solid black 1.5px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 3px black;
-    cursor: default;
-    transition: all 500ms ease;
+.logos {
+  border: solid black 1.5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+  cursor: default;
+  transition: all 500ms ease;
 }
-.logos:hover{
-    translate: 0 -2px;
-    scale: 1.025;
-    box-shadow: 0 0 6px black;
+.logos:hover {
+  translate: 0 -2px;
+  scale: 1.025;
+  box-shadow: 0 0 6px black;
 }
-.logos span{
-    display: inline-block;
-}
-@media (max-width: 1024px) {
-    .aboutContainer{
-        width: 70%;
-    }
-}
-@media (max-width: 600px) {
-    .aboutContainer{
-        width: 80%;
-        font-size: 1rem;
-    }
-    .briefAbt{
-        font-size: 0.8rem;
-    }
-    .skills h3{
-        font-size: 1.1rem;
-    }
-    .skills h4{
-        font-size: 1rem;
-    }
-    .dev{
-        font-weight: 500;
-        font-size: 0.8rem;
-    }
-    .logos img{
-        height: 1.2rem;
-    }
+.logos span {
+  display: inline-block;
 }
 
+.experience {
+  margin-bottom: 4rem;
+}
+.experience h3 {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+.expList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem; /* create consistent gap below h3/hr */
+}
+.expItem {
+  border: 1.5px solid black;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.expHeader h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.company {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+.expWhen {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.expPoints {
+  margin: 10px 0 0 0;
+  padding-left: 1.2rem;
+}
+.expPoints li {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+.tech {
+  margin-top: 8px;
+  font-weight: 500;
+}
+.liveLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5rem;
+}
+@media (max-width: 1024px) {
+  .aboutContainer {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .aboutContainer {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .briefAbt {
+    font-size: 0.8rem;
+  }
+  .skills h3 {
+    font-size: 1.1rem;
+  }
+  .skills h4 {
+    font-size: 1rem;
+  }
+  .dev {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+}
