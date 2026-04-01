@@ -1,54 +1,53 @@
 import React from "react";
 import "../styles/About.css";
-import html5Logo from "../assets/images/skills/html5.svg";
-import css3Logo from "../assets/images/skills/css3.svg";
-import jsLogo from "../assets/images/skills/javascript.svg";
-import reactLogo from "../assets/images/skills/react.svg";
-import mongodbLogo from "../assets/images/skills/mongodb.svg";
-import nodeLogo from "../assets/images/skills/node.svg";
-import expressLogo from "../assets/images/skills/express.svg";
-import gitLogo from "../assets/images/skills/git.svg";
-import gitHubLogo from "../assets/images/skills/github.svg";
-import vscodeLogo from "../assets/images/skills/vscode.svg";
-import TailWindLogo from "../assets/images/skills/tailwind.svg";
-import nextLogo from "../assets/images/skills/nextjs.svg";
-import tsLogo from "../assets/images/skills/typescript.svg";
-import externalLinkImg from "../assets/images/external-link.svg"
+import { skillsData } from "../data/skillsData.js";
+import externalLinkImg from "../assets/images/external-link.svg";
 
 function About() {
   const underlineStyle = {
-    textDecoration: 'underline',
+    textDecoration: "underline",
   };
   return (
     <div id="about" className="aboutContainer">
       <div className="desc">
         <h2>About Me</h2>
         <hr />
-        <p className="briefAbt">
-          <br />
-          Hey, I'm Dagmawi, a Computer Science student with a strong interest in
-          web development and a hunger for continuous learning. <br />I always
-          knew I was into tech ever since I got my first PC, I couldn’t let go
-          of it. Growing up, I was the go to person in my family and
-          neighborhood for anything tech related. It was in those early days I
-          met the infamous <i>blue screen of death </i>and instead of running
-          from it, I got curious. That early curiosity led me to join AAU and
-          study Computer Science, where I really started diving into coding.{" "}
-          <br />
-          I specialize in frontend development, creating responsive and minimal
-          web interfaces using modern tools like React, HTML/CSS, and
-          JavaScript. Lately, I've also been exploring backend concepts with
-          Node.js and learning how the web works under the hood. <br />
-          Beyond code, I enjoy expanding my knowledge through side projects,
-          certifications, and YouTube deep dives whether it's full-stack
-          tutorials, UI inspiration, or big picture tech wisdom. <br /> <br />
-          Currently, I’m building real-world projects, learning from every bug,
-          and working toward becoming a well rounded developer. <br />
-          If I’m not coding, you’ll find me at the gym, playing a casual game of
-          chess, reading the Bible, flipping through self help or fiction books,
-          occasionally watching a movie, or just vibing to music. I’m always
-          learning, not just in tech, but in life too.
-        </p>
+        <div className="briefAbt">
+          <p>
+            Hey, I'm Dagmawi, a Computer Science student with a strong interest
+            in web development and a hunger for continuous learning.
+          </p>
+          <p>
+            I always knew I was into tech ever since I got my first PC. I
+            couldn’t let go of it. Growing up, I was the go-to person in my
+            family and neighborhood for anything tech-related. It was in those
+            early days I met the infamous <i>blue screen of death </i>and
+            instead of running from it, I got curious. That early curiosity led
+            me to join AAU and study Computer Science, where I really started
+            diving into coding.
+          </p>
+          <p>
+            I specialize in frontend development, creating responsive and
+            minimal web interfaces using modern tools like React, HTML/CSS, and
+            JavaScript/TypeScript. Lately, I've also been exploring backend
+            concepts with Node.js and learning how the web works under the hood.
+          </p>
+          <p>
+            Beyond code, I enjoy expanding my knowledge through side projects,
+            certifications, and YouTube deep dives—whether it's full-stack
+            tutorials, UI inspiration, or big-picture tech wisdom.
+          </p>
+          <p>
+            Currently, I’m building real-world projects, learning from every
+            bug, and working toward becoming a well-rounded developer.
+          </p>
+          <p>
+            If I’m not coding, you’ll find me at the gym, playing a casual game
+            of chess, reading the Bible, flipping through self-help or fiction
+            books, occasionally watching a movie, or just vibing to music. I’m
+            always learning—not just in tech, but in life too.
+          </p>
+        </div>
       </div>
 
       <div className="skills">
@@ -56,70 +55,19 @@ function About() {
         <hr />
         <h4>Web Development</h4>
         <div className="webSkills">
-          <span className="dev">Front End</span>
-          <div className="frontEnd">
-            <span className="logos">
-              <img src={reactLogo} alt="react logo" />
-              <span>React</span>{" "}
-            </span>
-            <span className="logos">
-              <img src={nextLogo} alt="NextJs logo" />
-              <span>NextJs</span>
-            </span>
-            <span className="logos">
-              <img src={TailWindLogo} alt="Tailwind logo" />
-              <span>TailWind CSS</span>
-            </span>
-            <span className="logos">
-              <img src={css3Logo} alt="CSS 3 logo" />
-              <span>CSS</span>
-            </span>
-            <span className="logos">
-              <img src={html5Logo} alt="HTML 5 logo" />
-              <span>HTML 5</span>
-            </span>
-          </div>
-          <span className="dev">Back End</span>
-          <div className="backEnd">
-            <span className="logos">
-              <img src={nodeLogo} alt="node js logo" />
-              <span>Node Js</span>{" "}
-            </span>
-            <span className="logos">
-              <img src={expressLogo} alt="express js logo" />
-              <span>Express Js</span>
-            </span>
-            <span className="logos">
-              <img src={mongodbLogo} alt="mongodb logo" />
-              <span>MongoDB</span>
-            </span>
-          </div>
-          <span className="dev">Languages</span>
-          <div className="Languages">
-            <span className="logos">
-              <img src={jsLogo} alt="JavaScript logo" />
-              <span>JavaScript</span>
-            </span>
-            <span className="logos">
-              <img src={tsLogo} alt="TypeScript logo" />
-              <span>TypeScript</span>
-            </span>
-          </div>
-          <span className="dev">Tools & Workflow</span>
-          <div className="tools">
-            <span className="logos">
-              <img src={gitLogo} alt="Git logo" />
-              <span>Git</span>
-            </span>
-            <span className="logos">
-              <img src={gitHubLogo} alt="GitHub logo" />
-              <span>GitHub</span>
-            </span>
-            <span className="logos">
-              <img src={vscodeLogo} alt="VS Code logo" />
-              <span>VS Code</span>
-            </span>
-          </div>
+          {skillsData.map((category) => (
+            <React.Fragment key={category.id}>
+              <span className="dev">{category.title}</span>
+              <div className={category.className}>
+                {category.skills.map((skill, index) => (
+                  <span className="logos" key={index}>
+                    {skill.img && <img src={skill.img} alt={skill.alt} />}
+                    <span>{skill.name}</span>
+                  </span>
+                ))}
+              </div>
+            </React.Fragment>
+          ))}
         </div>
         {/* <div className='networking'>
                 <h4>Networking Skills</h4>
@@ -176,10 +124,22 @@ function About() {
               </li>
             </ul>
             <p className="tech">
-              Tech: React, TypeScript, Zustand, Tailwind CSS, Vite 
+              Tech: React, TypeScript, Zustand, Tailwind CSS, Vite
             </p>
             <br />
-            <a href="https://drive.google.com/file/d/1_TKIKyqK3MmhG1mJ1HvxOUy_4clSMpr3" className='liveLink roundLink' target='_blank'><img src={externalLinkImg} alt="external Link" rel="noopener noreferrer" className='externalLinkImage' />  Intern certificate</a>
+            <a
+              href="https://drive.google.com/file/d/1_TKIKyqK3MmhG1mJ1HvxOUy_4clSMpr3"
+              className="liveLink roundLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={externalLinkImg}
+                alt="external Link"
+                className="externalLinkImage"
+              />{" "}
+              Intern certificate
+            </a>
           </div>
 
           <div className="expItem">
