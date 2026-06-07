@@ -13,6 +13,7 @@ import nextLogo from "../assets/images/skills/nextjs.svg";
 import primsaLogo from "../assets/images/skills/prisma.svg";
 import postgresqlLogo from "../assets/images/skills/postgresql.svg";
 import tsLogo from "../assets/images/skills/typescript.svg";
+import mySqlLogo from "../assets/images/skills/mysql.svg";
 
 export const skillsData = [
   {
@@ -40,10 +41,11 @@ export const skillsData = [
   {
     id: 3,
     title: "Databases",
-    className: "backEnd", // uses same styling class as backend
+    className: "backEnd",
     skills: [
       { name: "MongoDB", img: mongodbLogo, alt: "mongodb logo" },
       { name: "PostgreSQL", img: postgresqlLogo, alt: "postgresql logo" },
+      { name: "MySQL", img: mySqlLogo, alt: "mySQL logo" },
     ],
   },
   {
