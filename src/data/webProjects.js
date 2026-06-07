@@ -5,6 +5,7 @@ import ipMapper from "../assets/images/screenshots/ipMapper.png"
 import climatic from "../assets/images/screenshots/climaticd.png"
 import insight from "../assets/images/screenshots/insight.png"
 import event from "../assets/images/screenshots/events.png"
+import charity from "../assets/images/screenshots/charity.png"
 const projects = [
   {
     "id": 1,
@@ -16,7 +17,23 @@ const projects = [
     "codeLink": "https://github.com/DagiH22/Attendance-System"
   },
   {
-    "id": 2,
+  "id": 2,
+  "title": "Charity Management System",
+  "description": "A collaborative final-year team project designed to connect donors with charitable organizations. It features dedicated dashboards for Admins, Charities, and Donors, supporting authentication, charity and campaign management, donation tracking, anonymous donations, Chapa payment integration, and role-based access control.",
+  "techStack": [
+    "React 19",
+    "Vite",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Prisma ORM"
+  ],
+  "image": charity,
+  "demoLink": "https://charity-management-system-nu.vercel.app/",
+  "codeLink": "https://github.com/DagiH22/charity-management-system"
+},
+    {
+    "id": 3,
     "title": "ADmyBRAND Marketing Insight",
     "description": "ADmyBRAND Insights is an analytics dashboard for digital marketing agency. Built with Next.js, Tailwind CSS, and shadcn/ui, it offers a modern, responsive UI with KPI cards, interactive charts, sortable/filterable tables,and export to PDF/CSV, using mock data generated with FakerJS.",    
     "techStack": ["Next.js 14+ (App Router)", "Tailwind CSS", "shadcn/ui", "Recharts", "@faker-js/faker", "jsPDF"],
@@ -24,8 +41,9 @@ const projects = [
     "demoLink": "https://admybrand-marketing-insight.netlify.app/",
     "codeLink": "https://github.com/DagiH22/adMyBrand-marketing-insights"
   },
+
   {
-    "id": 3,
+    "id": 4,
     "title": "Climatic",
     "description": "Climatic is a responsive weather app that uses geolocation or city search to display current conditions, a 24-hour forecast (in 3-hour intervals), and a 5-day forecast with a temperature graph. It features custom SVG icons, light/dark mode, Celsius/Fahrenheit toggles with local storage.",
     "techStack": [
@@ -35,7 +53,7 @@ const projects = [
     "codeLink": "https://github.com/DagiH22/Climatic"
   },
     {
-      "id": 4,
+      "id": 5,
       "title": "IPMapper",
       "description": "IPMapper is a React app that shows the location of any IP or domain on a map. It auto-detects yours on load, works on all devices, and uses IPify for geolocation, Google DNS for domain resolution, Leaflet, and CartoDB tiles.",
       "techStack": [
