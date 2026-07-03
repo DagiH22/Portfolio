@@ -13,40 +13,17 @@ function About() {
         <h2>About Me</h2>
         <hr />
         <div className="briefAbt">
-          <p>
-            Hey, I'm Dagmawi, a Computer Science student with a strong interest
-            in web development and a hunger for continuous learning.
-          </p>
-          <p>
-            I always knew I was into tech ever since I got my first PC. I
-            couldn’t let go of it. Growing up, I was the go-to person in my
-            family and neighborhood for anything tech-related. It was in those
-            early days I met the infamous <i>blue screen of death </i>and
-            instead of running from it, I got curious. That early curiosity led
-            me to join AAU and study Computer Science, where I really started
-            diving into coding.
-          </p>
-          <p>
-            I specialize in frontend development, creating responsive and
-            minimal web interfaces using modern tools like React, HTML/CSS, and
-            JavaScript/TypeScript. Lately, I've also been exploring backend
-            concepts with Node.js and learning how the web works under the hood.
-          </p>
-          <p>
-            Beyond code, I enjoy expanding my knowledge through side projects,
-            certifications, and YouTube deep dives—whether it's full-stack
-            tutorials, UI inspiration, or big-picture tech wisdom.
-          </p>
-          <p>
-            Currently, I’m building real-world projects, learning from every
-            bug, and working toward becoming a well-rounded developer.
-          </p>
-          <p>
-            If I’m not coding, you’ll find me at the gym, playing a casual game
-            of chess, reading the Bible, flipping through self-help or fiction
-            books, occasionally watching a movie, or just vibing to music. I’m
-            always learning—not just in tech, but in life too.
-          </p>
+<p>
+<br />I'm a Computer Science graduate from Addis Ababa University with a passion for building modern, scalable, and user-focused web applications. I enjoy solving real-world problems through software and continuously expanding my knowledge of both frontend and backend development.
+</p><p>
+<br /> As a full-stack developer, I build responsive and interactive applications using React, JavaScript, TypeScript, HTML, and CSS on the frontend, while developing server-side applications and APIs with Node.js, Express, and MongoDB on the backend. I enjoy understanding how every layer of an application works, from designing intuitive user interfaces to building efficient backend systems and databases.
+</p><p>
+<br />Through internships and personal projects, I've gained hands-on experience developing production-ready applications, creating reusable components, implementing dynamic user interfaces, and collaborating in professional development environments. I also have practical experience providing IT support and troubleshooting hardware, software, and networking issues, which has strengthened my analytical thinking and problem-solving skills.
+</p><p>
+<br />Beyond web development, I have a strong interest in software engineering, computer networking, and building systems that are reliable, maintainable, and scalable. I enjoy learning new technologies, exploring best practices, and continuously improving through hands-on projects and technical challenges.
+</p><p>
+<br />I'm always looking for opportunities to contribute to meaningful projects, collaborate with talented teams, and continue growing as a full-stack software developer.
+</p>
         </div>
       </div>
 
@@ -98,20 +75,20 @@ function About() {
                   </a>
                 </p>
               </div>
-              <div className="expWhen">Oct 2025 - Jan 2026</div>
+              <div className="expWhen">Aug 2025 - May 2026</div>
             </div>
             <ul className="expPoints">
               <li>
-                Built a scalable web-based ERP interface builder using React and
+                Built a scalable web based ERP interface builder using React and
                 TypeScript, enabling users to visually create and configure
                 business application pages.
               </li>
               <li>
-                Developed drag-and-drop functionality with reusable UI
+                Developed drag and drop functionality with reusable UI
                 components and structured state management using Zustand.
               </li>
               <li>
-                Implemented multi-page workflows, dynamic forms, tables, and
+                Implemented multi page workflows, dynamic forms, tables, and
                 configurable layouts to support flexible ERP customization.
               </li>
               <li>
@@ -120,7 +97,7 @@ function About() {
               </li>
               <li>
                 Collaborated and worked independently in a fully remote setup,
-                translating UI concepts into production-ready solutions.
+                translating UI concepts into production ready solutions.
               </li>
             </ul>
             <p className="tech">
@@ -150,11 +127,11 @@ function About() {
                   Public Service Transport Service - Addis Ababa
                 </p>
               </div>
-              <div className="expWhen">Jun 2025 - Aug 2025</div>
+              <div className="expWhen">May 2025 - Jul 2025</div>
             </div>
             <ul className="expPoints">
               <li>
-                Provided hands-on technical support by diagnosing and resolving
+                Provided hands on technical support by diagnosing and resolving
                 hardware, software, and network issues to maintain uninterrupted
                 daily operations.
               </li>
@@ -167,7 +144,7 @@ function About() {
                 failures, improving system stability and response time.
               </li>
               <li>
-                Delivered direct user support, strengthening problem-solving
+                Delivered direct user support, strengthening problem solving
                 ability and professional communication in a real world
                 environment.
               </li>

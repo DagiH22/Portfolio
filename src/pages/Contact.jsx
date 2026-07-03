@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div id='contact'>
         <h2>Contact Me</h2> <hr />
-        <p>I’d love to connect — feel free to reach out for projects, opportunities, or questions</p>
+        <p>I’d love to connect feel free to reach out for projects, opportunities, or questions</p>
         <ul>
             <li><a href="mailto:dagmawiheywot96@gmail.com" ><img src={emailImg} alt="email icon" /> Email </a></li>
             <li><a href="https://github.com/DagiH22" target='_blank'><img src={githubImg} alt="github icon" /> Github </a></li>

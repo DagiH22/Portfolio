@@ -4,7 +4,7 @@ import '../styles/Home.css'
 import resume from "../../assets/cv/Dagmawi-Heywot-Resume.pdf"
 
 function Home() {
-  const text = "Always learning. Always building.";
+  const text = "Building ideas into reality.";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -22,10 +22,10 @@ function Home() {
   return (
     <div id='home'>
         <div className='homeContainer'>
-            <p className='greeting'><span className='hey'>Hey, I'm</span> <br/><span className='dagi'>Dagmawi</span><br/><span className='web'>Web Developer {/*| Network Engineer*/}</span></p>
-            <p className='shortDescription'>I make clean, modern web experiences using React and a growing toolkit of web technologies.
-                                            While my main strength is in the frontend, 
-                                            I'm actively expanding into backend development to build more complete and dynamic applications.</p>
+            <p className='greeting'><span className='hey'>Hey, I'm</span> <br/><span className='dagi'>Dagmawi</span><br/><span className='web'>Full-Stack Developer {/*| Network Engineer*/}</span></p>
+            <p className='shortDescription'>I develop full-stack web applications that combine clean, responsive interfaces with robust backend systems. 
+                                        With experience in React, TypeScript, Node.js, Express, and MongoDB, I enjoy building software that is scalable,
+                                         maintainable, and designed to solve real-world problems. <br /></p>
                                             <br/>
                                             <p className='always'>{displayedText}<span className="cursor">|</span></p>
         </div>
