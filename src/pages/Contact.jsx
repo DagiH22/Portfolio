@@ -13,7 +13,7 @@ function Contact() {
         <ul>
             <li><a href="mailto:dagmawiheywot96@gmail.com" ><img src={emailImg} alt="email icon" /> Email </a></li>
             <li><a href="https://github.com/DagiH22" target='_blank'><img src={githubImg} alt="github icon" /> Github </a></li>
-            <li><a href="linkedin.com/in/dagmawi-heywot-96j" target='_blank'><img src={linkedinImg} alt="linkedin icon" /> Linkedin</a></li>
+            {/* <li><a href="linkedin.com/in/dagmawi-heywot-96j" target='_blank'><img src={linkedinImg} alt="linkedin icon" /> Linkedin</a></li> */}
             <li><a href="https://www.t.me/dagiheb" target='_blank'><img src={tgImg} alt="Telegram icon" /> Telegram </a></li>
         </ul>
     </div>
