@@ -5,16 +5,14 @@ import { personalInfo } from "@/data/experience";
 import {
   Mail,
   Phone,
-  Github,
-  Linkedin,
   Send,
   MapPin,
   Copy,
   Check,
   ExternalLink,
   MessageSquare,
-  Sparkles,
 } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 
 export default function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -147,7 +145,7 @@ export default function ContactSection() {
               >
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-xl bg-slate-900 text-white border border-slate-700">
-                    <Github className="w-4 h-4" />
+                    <GithubIcon className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="text-xs font-bold text-white group-hover:text-indigo-300 transition-colors block">
@@ -169,7 +167,7 @@ export default function ContactSection() {
               >
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-xl bg-[#0077b5]/20 text-[#0a66c2] border border-[#0077b5]/30">
-                    <Linkedin className="w-4 h-4" />
+                    <LinkedinIcon className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="text-xs font-bold text-white group-hover:text-indigo-300 transition-colors block">

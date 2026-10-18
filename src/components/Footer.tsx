@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import { ArrowUp, Github, Linkedin, Mail, Send } from "lucide-react";
+import { ArrowUp, Mail, Send } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { personalInfo } from "@/data/experience";
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
               aria-label="GitHub Profile"
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-indigo-500/50 hover:bg-slate-800 transition-all"
             >
-              <Github className="w-4 h-4" />
+              <GithubIcon className="w-4 h-4" />
             </a>
             <a
               href={personalInfo.linkedinUrl}
@@ -34,7 +34,7 @@ export default function Footer() {
               aria-label="LinkedIn Profile"
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-indigo-500/50 hover:bg-slate-800 transition-all"
             >
-              <Linkedin className="w-4 h-4" />
+              <LinkedinIcon className="w-4 h-4" />
             </a>
             <a
               href={personalInfo.telegramUrl}

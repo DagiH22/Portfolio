@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Terminal, FileDown, ArrowUpRight } from "lucide-react";
+import { Menu, X, FileDown } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },

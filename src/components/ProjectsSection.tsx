@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
-import { Code2, Sparkles, Layers } from "lucide-react";
+import { Layers } from "lucide-react";
 
 export default function ProjectsSection() {
   return (

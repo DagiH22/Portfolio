@@ -1,18 +1,18 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { personalInfo } from "@/data/experience";
-import { FileDown, ArrowRight, Sparkles, Terminal, Code2, Cpu, CheckCircle2 } from "lucide-react";
+import { FileDown, ArrowRight } from "lucide-react";
+
+const titles = [
+  "Fullstack Software Engineer",
+  "TypeScript & Next.js Specialist",
+  "AI / RAG & Vector Architect",
+  "Production Systems Builder",
+];
 
 export default function Hero() {
   const [typedTitle, setTypedTitle] = useState("");
-  const titles = [
-    "Fullstack Software Engineer",
-    "TypeScript & Next.js Specialist",
-    "AI / RAG & Vector Architect",
-    "Production Systems Builder",
-  ];
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

@@ -3,13 +3,11 @@ import Image from "next/image";
 import { Project } from "@/types/portfolio";
 import {
   ExternalLink,
-  Github,
   CheckCircle2,
   Lock,
-  Layers,
-  Sparkles,
   ShieldCheck,
 } from "lucide-react";
+import { GithubIcon } from "@/components/icons/SocialIcons";
 
 interface ProjectCardProps {
   project: Project;
@@ -155,7 +153,7 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 hover:text-white border border-slate-700/60 text-slate-300 text-xs font-semibold transition-all duration-150 active:scale-95"
               >
-                <Github className="w-3.5 h-3.5" />
+                <GithubIcon className="w-3.5 h-3.5" />
                 <span>Source Code</span>
               </a>
             ) : (

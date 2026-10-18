@@ -8,7 +8,6 @@ import {
   Database,
   Terminal,
   Cpu,
-  Layers,
   Sparkles,
   CheckCircle,
 } from "lucide-react";

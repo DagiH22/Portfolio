@@ -9,7 +9,6 @@ import {
   ExternalLink,
   Calendar,
   MapPin,
-  CheckCircle2,
 } from "lucide-react";
 
 export default function ExperienceTimeline() {
