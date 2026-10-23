@@ -28,11 +28,11 @@ const siteUrl = "https://dagih22.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Dagmawi Heywot | Fullstack Software Engineer (TypeScript, Next.js, Node.js, AI/RAG)",
+    default: "Dagmawi Heywot | Fullstack Software Engineer (TypeScript, React/Next.js, NestJS, PostgreSQL)",
     template: "%s | Dagmawi Heywot",
   },
   description:
-    "Fullstack Software Engineer (BSc in Computer Science, Addis Ababa University, 2026) specializing in TypeScript, React, Next.js, Node.js, and SQL/vector database architectures (pgvector, BullMQ, RAG).",
+    "Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members, built a multi-role donation platform with secure payment webhooks, and am developing a RAG-based support platform with cited answers. Comfortable working on-site, hybrid, or remote, with strong written and spoken English.",
   keywords: [
     "Dagmawi Heywot",
     "Fullstack Software Engineer",
@@ -41,13 +41,15 @@ export const metadata: Metadata = {
     "Next.js",
     "Node.js",
     "NestJS",
-    "pgvector",
-    "RAG Architecture",
-    "BullMQ",
     "PostgreSQL",
+    "pgvector",
+    "BullMQ",
+    "Redis",
+    "RAG",
+    "Prisma ORM",
+    "Drizzle ORM",
     "Addis Ababa University",
     "Ethiopia Software Engineer",
-    "Fullstack Architect",
   ],
   authors: [{ name: "Dagmawi Heywot", url: "https://github.com/DagiH22" }],
   creator: "Dagmawi Heywot",
@@ -60,16 +62,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Dagmawi Heywot | Fullstack Software Engineer (TypeScript, Next.js, Node.js, AI/RAG)",
+    title: "Dagmawi Heywot | Fullstack Software Engineer (TypeScript, React/Next.js, NestJS, PostgreSQL)",
     description:
-      "Fullstack Software Engineer specializing in TypeScript, React, Next.js, Node.js, and SQL/vector database architectures (pgvector, BullMQ, RAG).",
+      "Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members, built a multi-role donation platform with secure payment webhooks, and am developing a RAG-based support platform with cited answers.",
     siteName: "Dagmawi Heywot Portfolio",
     images: [
       {
         url: "/images/dh3.svg",
         width: 1200,
         height: 630,
-        alt: "Dagmawi Heywot - Fullstack & AI Software Engineer",
+        alt: "Dagmawi Heywot - Fullstack Software Engineer",
       },
     ],
   },
@@ -77,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dagmawi Heywot | Fullstack Software Engineer",
     description:
-      "Fullstack Software Engineer specializing in TypeScript, Next.js, Node.js, and SQL/vector database architectures (pgvector, BullMQ, RAG).",
+      "Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members.",
     images: ["/images/dh3.svg"],
   },
   alternates: {
@@ -105,7 +107,7 @@ const jsonLdData = {
       name: "Dagmawi Heywot",
       jobTitle: "Fullstack Software Engineer",
       description:
-        "Fullstack Software Engineer specializing in TypeScript, React, Next.js, Node.js, and SQL/vector database architectures (pgvector, BullMQ, RAG).",
+        "Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members, built a multi-role donation platform with secure payment webhooks, and am developing a RAG-based support platform with cited answers.",
       url: siteUrl,
       sameAs: [
         "https://github.com/DagiH22",
@@ -130,12 +132,13 @@ const jsonLdData = {
         "Redis",
         "BullMQ",
         "Retrieval-Augmented Generation (RAG)",
-        "OpenAI Embeddings",
+        "OpenAI Embeddings API",
         "Prisma ORM",
         "Drizzle ORM",
         "Tailwind CSS",
         "Zod",
         "Chapa Payment Gateway",
+        "Odoo",
       ],
       address: {
         "@type": "PostalAddress",
@@ -149,7 +152,7 @@ const jsonLdData = {
       programmingLanguage: "TypeScript",
       codeRepository: "https://github.com/DagiH22/agentdesk",
       description:
-        "Autonomous RAG customer support platform utilizing BullMQ, Redis, and pgvector embeddings with token-based chunking.",
+        "AI support platform where businesses upload documents and get a chatbot that answers customer questions with cited sources, powered by BullMQ, Redis, and pgvector.",
       author: {
         "@id": `${siteUrl}/#person`,
       },
@@ -160,7 +163,7 @@ const jsonLdData = {
       programmingLanguage: "TypeScript",
       codeRepository: "https://github.com/DagiH22/charity-management-system",
       description:
-        "Multi-role donation and transparency platform with Chapa webhook signature verification and automated PDF receipts.",
+        "Multi-role donation platform with Chapa webhook signature verification, automated PDF receipts, and Recharts analytics.",
       author: {
         "@id": `${siteUrl}/#person`,
       },
@@ -171,7 +174,7 @@ const jsonLdData = {
       programmingLanguage: "TypeScript",
       codeRepository: "https://github.com/DagiH22/Attendance-System",
       description:
-        "Production university attendance tracking system with QR-code generation and real-time participation analytics.",
+        "Production university attendance system with QR and manual check-in workflows used by 100+ members.",
       author: {
         "@id": `${siteUrl}/#person`,
       },

@@ -3,35 +3,31 @@ import { Experience, Education, Certification, PersonalInfo } from "@/types/port
 export const personalInfo: PersonalInfo = {
   name: "Dagmawi Heywot",
   title: "Fullstack Software Engineer",
-  location: "Addis Ababa, Ethiopia (Open to Remote & Relocation)",
+  location: "Addis Ababa, Ethiopia (Open to On-site, Hybrid, or Remote)",
   email: "dagmawiheb@gmail.com",
   phone: "+251 944 301 550",
   githubUrl: "https://github.com/DagiH22",
+  // TODO: Verify LinkedIn URL (currently set to https://www.linkedin.com/in/dagmawi-heywot-96j)
   linkedinUrl: "https://www.linkedin.com/in/dagmawi-heywot-96j",
   telegramUrl: "https://t.me/dagiheb",
   summary:
-    "Fullstack Software Engineer (BSc in Computer Science, Addis Ababa University, 2026) specializing in TypeScript, React, Next.js, Node.js, and SQL/vector database architectures. Shipped a production university attendance system, built a multi-role donation platform with Chapa webhook payments, and engineered an AI RAG customer support platform utilizing BullMQ and pgvector embeddings.",
-  availability: "Available for Fullstack & AI Engineering Roles",
+    "Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members, built a multi-role donation platform with secure payment webhooks, and am developing a RAG-based support platform with cited answers. Comfortable working on-site, hybrid, or remote, with strong written and spoken English.",
+  availability: "Open to On-site, Hybrid, or Remote Roles",
   metrics: [
     {
-      label: "Fullstack Systems",
-      value: "3+",
-      sublabel: "Production & Flagship Architectures",
+      label: "Members Served",
+      value: "100+",
+      sublabel: "Attendance Platform in Production",
     },
     {
-      label: "Automated Tests",
-      value: "61+",
-      sublabel: "Passing Backend & API Tests",
+      label: "Production & Active Systems",
+      value: "3",
+      sublabel: "RAG Support, Payments & Attendance",
     },
     {
-      label: "AI / Vector Search",
-      value: "pgvector",
-      sublabel: "BullMQ & Embeddings Pipeline",
-    },
-    {
-      label: "Education",
-      value: "BSc CS '26",
-      sublabel: "Addis Ababa University",
+      label: "Professional Roles",
+      value: "4",
+      sublabel: "Contract, Dev & Marketing Internships",
     },
   ],
 };
@@ -40,15 +36,39 @@ export const experiences: Experience[] = [
   {
     id: "contractor-2026",
     role: "Research & Testing Contractor",
-    company: "Private Client (Confidential)",
+    company: "Private Client (Remote, Confidential)",
     location: "Remote",
-    period: "Jan 2026 – Present",
+    period: "Jul 2026 – Present",
     employmentType: "Contract",
     highlights: [
       "Research robotics, AI, and marketing topics and synthesize technical findings into structured reports for the client.",
       "Test Android applications and websites, reproduce defects, and report them with exact deterministic steps under tight deadlines.",
     ],
-    technologies: ["AI Research", "Robotics Synthesis", "Android QA", "Defect Reproduction", "Deterministic Reporting"],
+    technologies: [
+      "AI & Robotics Research",
+      "Android QA",
+      "Web Testing",
+      "Deterministic Defect Reporting",
+    ],
+  },
+  {
+    id: "condigital-intern",
+    role: "Digital Operations & Marketing Automation Intern",
+    company: "Condigital Inc.",
+    location: "Remote",
+    period: "Apr 2026 – Jun 2026",
+    employmentType: "Internship",
+    highlights: [
+      "Built and customized Odoo websites, eCommerce stores, and blogs, using Odoo Studio to create custom apps, fields, and automated workflows without extra code.",
+      "Ran email marketing and marketing automation campaigns tied to Odoo CRM, with segmented lists and scheduled follow-ups to nurture and track leads.",
+    ],
+    technologies: [
+      "Odoo Studio",
+      "Odoo CRM",
+      "Marketing Automation",
+      "Email Workflows",
+      "eCommerce",
+    ],
   },
   {
     id: "viralhit-intern",
@@ -57,14 +77,21 @@ export const experiences: Experience[] = [
     location: "Remote",
     period: "Oct 2025 – Jan 2026",
     employmentType: "Internship",
+    featured: true,
     companyUrl: "https://viralhit.ai/",
     certificateUrl: "https://drive.google.com/file/d/1_TKIKyqK3MmhG1mJ1HvxOUy_4clSMpr3",
     highlights: [
       "Built the frontend of a visual ERP interface builder featuring a drag-and-drop canvas, reusable components, and Zustand state management.",
       "Implemented dynamic forms, configurable tables, and multi-page workflows, improving rendering performance on complex screens.",
-      "Collaborated in an agile distributed remote setup translating specifications into modular UI implementations.",
     ],
-    technologies: ["React 19", "TypeScript", "Zustand", "Tailwind CSS", "Vite", "Canvas D&D"],
+    technologies: [
+      "React 19",
+      "TypeScript",
+      "Zustand",
+      "Tailwind CSS",
+      "Vite",
+      "Drag-and-Drop Canvas",
+    ],
   },
   {
     id: "public-service-intern",
@@ -75,9 +102,13 @@ export const experiences: Experience[] = [
     employmentType: "Internship",
     highlights: [
       "Troubleshot hardware, software, and network problems and supported the organization's internal ERP platforms and websites.",
-      "Diagnosed connectivity issues and systems faults, minimizing staff operational downtime.",
     ],
-    technologies: ["Network Diagnostics", "Hardware Support", "Internal ERP", "User Administration"],
+    technologies: [
+      "Hardware Troubleshooting",
+      "Network Diagnostics",
+      "Internal ERP Support",
+      "Websites Support",
+    ],
   },
 ];
 

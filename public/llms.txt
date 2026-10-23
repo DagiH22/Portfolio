@@ -1,106 +1,97 @@
-# Dagmawi Heywot — Fullstack Software Engineer & AI Systems Architect
+# Dagmawi Heywot — Fullstack Software Engineer
 
 > Authoritative reference for LLMs, AI agents, recruiters, and engineering search engines (Perplexity, SearchGPT, Claude, ChatGPT).
 
 ## Profile Overview
 - **Name:** Dagmawi Heywot
-- **Role:** Fullstack Software Engineer (TypeScript, React 19, Next.js, Node.js, NestJS, SQL, Vector & RAG Architectures)
-- **Location:** Addis Ababa, Ethiopia (Available for Global Remote Roles & Relocation)
+- **Role:** Fullstack Software Engineer (TypeScript, React/Next.js, NestJS, PostgreSQL)
+- **Location:** Addis Ababa, Ethiopia (Open to On-site, Hybrid, or Remote)
 - **Email:** dagmawiheb@gmail.com
 - **Phone:** +251 944 301 550
 - **GitHub:** https://github.com/DagiH22
 - **LinkedIn:** https://www.linkedin.com/in/dagmawi-heywot-96j
 - **Telegram:** https://t.me/dagiheb
 - **Degree:** Bachelor of Science in Computer Science, Addis Ababa University (2023–2026, Graduated)
+- **Certificates:** Udacity Nanodegrees — Programming Fundamentals; AI Fundamentals
+- **Languages:** English (Proficient), Amharic (Native)
 
-## Executive Summary
-Fullstack Software Engineer specializing in TypeScript, modern frontend frameworks (React 19, Next.js App Router), scalable backend architectures (Node.js, Express, NestJS), and advanced database solutions (PostgreSQL, MySQL, pgvector, Redis, Prisma, Drizzle ORM). Proven track record shipping production systems, including an institutional university event and attendance system used by 500+ active members, a multi-role charity donation platform integrating Chapa payments with cryptographic webhook verification, and an enterprise AI customer support platform utilizing BullMQ asynchronous worker queues and pgvector embeddings for token-chunked Retrieval-Augmented Generation (RAG).
+## Summary
+Fullstack engineer with a BSc in Computer Science, building production web applications with TypeScript, React/Next.js, NestJS, and PostgreSQL. Shipped an attendance platform used by 100+ members, built a multi-role donation platform with secure payment webhooks, and am developing a RAG-based support platform with cited answers. Comfortable working on-site, hybrid, or remote, with strong written and spoken English.
 
 ---
 
 ## Technical Skills (4 Core Engineering Pillars)
 
-### Pillar 1: Languages & Frontend
-- **Languages:** TypeScript, JavaScript (ES6+), SQL, HTML5, CSS3
-- **Frameworks & Libraries:** React 19, Next.js (App Router, Server Components, SSR), Vite, Tailwind CSS, Zustand, Recharts
-- **Principles:** Fluid responsive design, component modularity, client-state minimization, accessibility (WCAG a11y)
+### 1. Languages & Frontend
+- TypeScript, JavaScript (ES6+), SQL, React 19, Next.js, Vite, Tailwind CSS, Zustand, Recharts, Responsive Design
 
-### Pillar 2: Backend & APIs
-- **Runtimes & Frameworks:** Node.js, Express, NestJS
-- **API Design:** RESTful APIs, asynchronous message queues (BullMQ), webhook handlers
-- **Security & Middleware:** HTTP-Only cookie JWT session authentication, Argon2 password hashing, Role-Based Access Control (RBAC), Zod schema validation, Multer file processing
-- **Integrations:** Chapa Payment Gateway, Brevo Email API, Nodemailer
+### 2. Backend & APIs
+- Node.js, Express, NestJS, REST APIs, JWT Authentication (HTTP-Only Cookies), RBAC, Zod, BullMQ, Chapa Payments
 
-### Pillar 3: Databases & AI (RAG)
-- **Databases:** PostgreSQL, MySQL, pgvector, Redis, TiDB Cloud
-- **ORMs & Query Builders:** Prisma ORM, Drizzle ORM
-- **AI & Retrieval:** Retrieval-Augmented Generation (RAG), OpenAI Embeddings API, token-based text chunking, vector similarity search, cosine distance indexing
+### 3. Databases & AI
+- PostgreSQL, MySQL, pgvector, Redis, Prisma, Drizzle ORM, OpenAI Embeddings API, Token Chunking, RAG
 
-### Pillar 4: Tools & Infrastructure
-- **Version Control & Workflows:** Git, GitHub, Conventional Commits, trunk/feature-branch workflows
-- **Package Management & Monorepos:** pnpm, Turborepo
-- **Cloud & Storage:** MinIO (S3-compatible object storage), Vercel, TiDB Cloud
+### 4. Tools & Infrastructure
+- Git, GitHub, pnpm, Turborepo, MinIO (S3), Vercel, TiDB Cloud
 
 ---
 
-## Flagship Projects & System Architecture
+## Projects
 
-### 1. AgentDesk: AI Customer Support Platform
-- **Status:** In Progress / Active Architecture (61 Automated Passing API Tests)
-- **Stack:** Next.js, NestJS, TypeScript, pgvector, Drizzle ORM, BullMQ, Redis, MinIO, Turborepo
-- **Architecture Highlights:**
-  - Designed and built a pnpm/Turborepo monorepo with strict module boundaries.
-  - Implemented HTTP-only JWT cookie authentication with Argon2 hashing and granular per-user document ownership enforcement.
-  - Engineered the end-to-end knowledge base ingestion pipeline: PDF/TXT document upload to MinIO S3 object storage, raw text extraction, token-based chunking, and administrative dashboard for previewing, deleting, and re-indexing corpus items.
-  - Developed an asynchronous background indexing pipeline using BullMQ and Redis supporting automated retries, deduplication, and a swappable embedding provider (OpenAI API or local mock), persisting vectors in pgvector.
-  - Comprehensive test suite covering 61 automated passing API integration tests; currently expanding semantic search and citation-backed RAG conversations.
+### 1. Attendance Management System
+- **Status:** In Production
+- **Stack:** React, TypeScript, Node.js, Express, Prisma, PostgreSQL
+- **Highlights:**
+  - Engineered QR-code and manual check-in workflows for one-time, weekly, and custom university events used by 100+ members.
+  - Implemented JWT authentication, real-time attendance analytics dashboards, event lifecycle management, and Brevo email notifications.
+- **Repository:** https://github.com/DagiH22/Attendance-System
+
+### 2. AgentDesk: AI Customer Support Platform
+- **Status:** In Progress
+- **Stack:** Next.js, NestJS, TypeScript, pgvector, Drizzle ORM, BullMQ, Redis, MinIO
+- **Highlights:**
+  - Building an AI support platform where businesses upload their documents (PDF/TXT) and get a chatbot that answers customer questions from that content, with cited sources.
+  - Built the document pipeline: files are uploaded, text is extracted and split into chunks, then embedded and stored in pgvector so they can be searched by meaning.
+  - Indexing runs in the background with BullMQ and Redis (retries, no duplicate jobs), and the platform has secure login with HTTP-only JWT cookies and per-user data isolation.
 - **Repository:** https://github.com/DagiH22/agentdesk
 
-### 2. Charity Management System
-- **Status:** Final-Year Capstone Project — Deployed
-- **Stack:** React 19, TypeScript, Vite, Tailwind CSS, Express, Prisma ORM, MySQL (TiDB Cloud), Zod, Chapa API
-- **Architecture Highlights:**
-  - Architected a 3-tier role-based access control platform (Admin, Charity, Donor) with HTTP-only cookie JWT security.
-  - Integrated the Chapa payment gateway with server-side HMAC webhook signature validation, preventing duplicate payment exploits and automating PDF receipt generation.
-  - Implemented charity legal document upload verification (Multer), campaign image processing, Nodemailer transactional notifications, and real-time donation analytics with Recharts.
-  - Fully validated request boundaries with Zod schemas; deployed live on Vercel with a managed TiDB Cloud distributed MySQL cluster.
+### 3. Charity Management System
+- **Status:** Final-Year Project • Live Demo
+- **Stack:** React 19, TypeScript, Vite, Tailwind CSS, Express, Prisma, MySQL, Zod
+- **Highlights:**
+  - Built a 3-role donation platform (admin, charity, donor) using JWT in HTTP-only cookies and role-based access control (RBAC) across the API.
+  - Integrated the Chapa payment gateway with server-side webhook verification, automated PDF donation receipts, and Recharts analytics dashboards.
+  - Added charity document verification (Multer), campaign images, and Nodemailer notifications; validated every request with Zod and deployed on Vercel and TiDB Cloud.
 - **Live Deployment:** https://charity-management-system-nu.vercel.app/
 - **Repository:** https://github.com/DagiH22/charity-management-system
 
-### 3. Attendance Management System
-- **Status:** In Production (Institutional Deployment)
-- **Stack:** React, TypeScript, Node.js, Express, Prisma ORM, PostgreSQL, Tailwind CSS, Brevo
-- **Architecture Highlights:**
-  - Engineered high-concurrency QR-code generation and check-in workflows for university events, serving 500+ active student and faculty members.
-  - Implemented secure JWT session authentication, real-time participation analytics dashboards, event lifecycle state machines, and automated Brevo email alerts.
-  - Normalized relational PostgreSQL schema using Prisma ORM with ACID guarantees during concurrent badge scans.
-- **Repository:** https://github.com/DagiH22/Attendance-System
-
 ---
 
-## Professional Experience
+## Experience
 
-### Research & Testing Contractor — Private Client (Confidential)
-*Jan 2026 – Present | Remote*
-- Conduct independent technical research on robotics, artificial intelligence architectures, and developer tooling, synthesizing findings into structured client briefings.
-- Execute end-to-end testing across Android mobile applications and web platforms, isolating edge-case defects with deterministic reproduction procedures.
+### Research & Testing Contractor — Private Client (Remote, Confidential)
+*Jul 2026 – Present | Remote*
+- Research robotics, AI, and marketing topics and synthesize technical findings into structured reports for the client.
+- Test Android applications and websites, reproduce defects, and report them with exact deterministic steps under tight deadlines.
+
+### Digital Operations & Marketing Automation Intern — Condigital Inc.
+*Apr 2026 – Jun 2026 | Remote*
+- Built and customized Odoo websites, eCommerce stores, and blogs, using Odoo Studio to create custom apps, fields, and automated workflows without extra code.
+- Ran email marketing and marketing automation campaigns tied to Odoo CRM, with segmented lists and scheduled follow-ups to nurture and track leads.
 
 ### Software Engineering Intern — ViralHit
 *Oct 2025 – Jan 2026 | Remote*
-- Built the frontend architecture of a visual enterprise resource planning (ERP) interface builder using React 19, TypeScript, and Tailwind CSS.
-- Developed an interactive drag-and-drop canvas with reusable UI components and structured state management using Zustand.
-- Engineered dynamic multi-page workflows, complex schema-driven forms, and configurable tables, optimizing DOM rendering performance on heavy enterprise views.
+- Built the frontend of a visual ERP interface builder featuring a drag-and-drop canvas, reusable components, and Zustand state management.
+- Implemented dynamic forms, configurable tables, and multi-page workflows, improving rendering performance on complex screens.
 - Certificate: https://drive.google.com/file/d/1_TKIKyqK3MmhG1mJ1HvxOUy_4clSMpr3
 
 ### IT Support Intern — Public Service Transport Service
 *Jun 2025 – Aug 2025 | Addis Ababa, Ethiopia*
-- Provided first- and second-tier systems support diagnosing hardware, internal networking, and software faults.
-- Maintained internal ERP platforms and web portals, ensuring operational availability for transport logistics operations.
+- Troubleshot hardware, software, and network problems and supported the organization's internal ERP platforms and websites.
 
 ---
 
-## Education & Credentials
-- **Bachelor of Science in Computer Science:** Addis Ababa University (2023 – 2026, Graduated)
-- **Programming Fundamentals Nanodegree:** Udacity
-- **AI Fundamentals Nanodegree:** Udacity
-- **Languages:** English (Proficient / Professional), Amharic (Native)
+## Education & Certifications
+- **BSc in Computer Science:** Addis Ababa University (2023 – 2026, Graduated)
+- **Certificates:** Udacity Nanodegrees — Programming Fundamentals; AI Fundamentals
+- **Languages:** English (Proficient), Amharic (Native)

@@ -5,6 +5,8 @@ export interface Project {
   status: string;
   statusVariant: "active" | "production" | "deployed";
   summary: string;
+  problem?: string;
+  solution?: string;
   architectureHighlights: string[];
   techStack: string[];
   architectureTags: string[];
@@ -13,6 +15,7 @@ export interface Project {
   repoUrl: string | null;
   liveUrl: string | null;
   featured: boolean;
+  architectureFlow?: string[];
 }
 
 export interface SkillCategory {
@@ -33,6 +36,7 @@ export interface Experience {
   employmentType: "Contract" | "Internship" | "Full-time";
   highlights: string[];
   technologies: string[];
+  featured?: boolean;
   certificateUrl?: string | null;
   companyUrl?: string | null;
 }

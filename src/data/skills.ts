@@ -30,7 +30,7 @@ export const skillCategories: SkillCategory[] = [
       "Express",
       "NestJS",
       "REST APIs",
-      "JWT Authentication (HTTP-Only)",
+      "JWT Authentication (HTTP-Only Cookies)",
       "RBAC",
       "Zod",
       "BullMQ",
@@ -41,7 +41,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "databases-ai",
     pillarNumber: 3,
-    title: "Databases & AI (RAG)",
+    title: "Databases & AI",
     description: "Relational modeling, vector search, embeddings, and token-chunked RAG pipelines.",
     skills: [
       "PostgreSQL",
@@ -52,7 +52,7 @@ export const skillCategories: SkillCategory[] = [
       "Drizzle ORM",
       "OpenAI Embeddings API",
       "Token Chunking",
-      "RAG Architectures",
+      "RAG",
     ],
     iconName: "Database",
   },
