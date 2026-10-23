@@ -111,7 +111,7 @@ export async function POST(req: NextRequest) {
     const toEmail = process.env.CONTACT_TO_EMAIL || "dagmawiheb@gmail.com";
     const fromEmail =
       process.env.CONTACT_FROM_EMAIL ||
-      "Portfolio Contact <onboarding@resend.dev>";
+      "Dagmawi <onboarding@resend.dev>";
 
     if (!apiKey) {
       console.warn(
