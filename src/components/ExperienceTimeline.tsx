@@ -21,13 +21,13 @@ export default function ExperienceTimeline() {
   const getCompanyIcon = (id: string) => {
     switch (id) {
       case "contractor-2026":
-        return <Cpu className="w-3.5 h-3.5 text-indigo-400" />;
+        return <Cpu className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />;
       case "condigital-intern":
-        return <Globe className="w-3.5 h-3.5 text-emerald-400" />;
+        return <Globe className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />;
       case "viralhit-intern":
-        return <Terminal className="w-3.5 h-3.5 text-cyan-400" />;
+        return <Terminal className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />;
       default:
-        return <Briefcase className="w-3.5 h-3.5 text-slate-400" />;
+        return <Briefcase className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />;
     }
   };
 
@@ -50,7 +50,7 @@ export default function ExperienceTimeline() {
         {/* Work Experience Column (7 cols) */}
         <div className="lg:col-span-7 flex flex-col gap-6">
           <div className="flex items-center gap-2 mb-2">
-            <Briefcase className="w-5 h-5 text-indigo-500" />
+            <Briefcase className="w-5 h-5 text-indigo-600 dark:text-indigo-500" />
             <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-slate-900 dark:text-slate-100">
               Work Experience
             </h3>
@@ -64,9 +64,9 @@ export default function ExperienceTimeline() {
                 <div key={exp.id} className="relative group">
                   {/* Timeline node icon marker */}
                   <div
-                    className={`absolute -left-[35px] sm:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-white dark:bg-slate-950 border-2 flex items-center justify-center transition-all shadow-sm ${
+                    className={`absolute -left-[35px] sm:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-white dark:bg-slate-950 border-2 flex items-center justify-center transition-all shadow-xs ${
                       isFeatured
-                        ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/80 shadow-indigo-500/30 scale-110"
+                        ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/80 shadow-indigo-500/20 scale-110"
                         : "border-slate-300 dark:border-slate-700 group-hover:border-indigo-400"
                     }`}
                   >
@@ -76,14 +76,14 @@ export default function ExperienceTimeline() {
                   <div
                     className={`p-6 rounded-3xl transition-all duration-200 backdrop-blur-md ${
                       isFeatured
-                        ? "bg-gradient-to-br from-indigo-950/20 via-slate-900/80 to-slate-900/60 border-2 border-indigo-500/40 shadow-xl shadow-indigo-500/5 hover:border-indigo-500/60"
-                        : "bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700"
+                        ? "bg-gradient-to-br from-indigo-50/80 via-white to-indigo-50/40 dark:from-indigo-950/25 dark:via-slate-900/80 dark:to-slate-900/60 border-2 border-indigo-400/70 dark:border-indigo-500/40 shadow-md dark:shadow-xl shadow-indigo-100 dark:shadow-indigo-500/5 hover:border-indigo-500"
+                        : "bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 shadow-xs"
                     }`}
                   >
                     {/* Featured Highlight Pill */}
                     {isFeatured && (
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-[10px] font-mono uppercase tracking-wider mb-3">
-                        <Sparkles className="w-3 h-3 text-cyan-400" />
+                      <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/30 text-indigo-800 dark:text-indigo-300 text-[10px] font-mono uppercase tracking-wider mb-3">
+                        <Sparkles className="w-3 h-3 text-cyan-600 dark:text-cyan-400" />
                         <span>Core Engineering Focus</span>
                       </div>
                     )}
@@ -127,7 +127,7 @@ export default function ExperienceTimeline() {
                     <ul className="space-y-2 my-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                       {exp.highlights.map((point, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <span className="text-indigo-500 font-bold select-none mt-0.5">
+                          <span className="text-indigo-600 dark:text-indigo-400 font-bold select-none mt-0.5">
                             ▹
                           </span>
                           <span className="leading-relaxed">{point}</span>
@@ -153,7 +153,7 @@ export default function ExperienceTimeline() {
                           href={exp.certificateUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/20 transition-colors cursor-pointer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-lg bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-colors cursor-pointer"
                         >
                           <Award className="w-3.5 h-3.5" />
                           <span>Intern Certificate</span>
@@ -173,7 +173,7 @@ export default function ExperienceTimeline() {
           {/* Education Block */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <GraduationCap className="w-5 h-5 text-indigo-500" />
+              <GraduationCap className="w-5 h-5 text-indigo-600 dark:text-indigo-500" />
               <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-slate-900 dark:text-slate-100">
                 Education
               </h3>
@@ -183,7 +183,7 @@ export default function ExperienceTimeline() {
               {educations.map((edu) => (
                 <div
                   key={edu.id}
-                  className="p-6 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all backdrop-blur-md"
+                  className="p-6 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all backdrop-blur-md shadow-xs"
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
@@ -211,7 +211,7 @@ export default function ExperienceTimeline() {
                   <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
                     {edu.highlights.map((h, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-indigo-500 mt-0.5">▹</span>
+                        <span className="text-indigo-600 dark:text-indigo-400 mt-0.5">▹</span>
                         <span>{h}</span>
                       </li>
                     ))}
@@ -224,15 +224,15 @@ export default function ExperienceTimeline() {
           {/* Certifications Block */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Award className="w-5 h-5 text-indigo-500" />
+              <Award className="w-5 h-5 text-indigo-600 dark:text-indigo-500" />
               <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-slate-900 dark:text-slate-100">
                 Certifications & Languages
               </h3>
             </div>
 
-            <div className="p-6 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-5 backdrop-blur-md">
+            <div className="p-6 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-5 backdrop-blur-md shadow-xs">
               <div>
-                <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-3">
+                <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-3 font-semibold">
                   Accredited Nanodegrees
                 </span>
                 <div className="space-y-2.5">
@@ -254,7 +254,7 @@ export default function ExperienceTimeline() {
                           </p>
                         </div>
                       </div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30 flex items-center gap-1">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30 flex items-center gap-1 font-medium">
                         <CheckCircle2 className="w-3 h-3" />
                         Verified
                       </span>
@@ -264,7 +264,7 @@ export default function ExperienceTimeline() {
               </div>
 
               <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
-                <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-3">
+                <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-3 font-semibold">
                   Spoken Languages
                 </span>
                 <div className="grid grid-cols-2 gap-2.5 text-xs">
