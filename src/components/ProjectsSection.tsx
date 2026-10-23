@@ -11,10 +11,10 @@ export default function ProjectsSection() {
           <Layers className="w-3.5 h-3.5" />
           <span>Flagship Engineering</span>
         </div>
-        <h2 className="font-['Orbitron',sans-serif] text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
-          Featured Systems & Architectures
+        <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight mb-3">
+          Featured Systems & Architecture
         </h2>
-        <p className="max-w-2xl text-slate-400 text-sm sm:text-base">
+        <p className="max-w-2xl text-slate-600 dark:text-slate-400 text-sm sm:text-base">
           Production-grade applications and systems engineered with strict TypeScript typing, asynchronous queue pipelines, role-based access control, and vector database embeddings.
         </p>
       </div>
